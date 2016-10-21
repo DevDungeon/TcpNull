@@ -25,7 +25,6 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -84,15 +83,12 @@ public class TcpServer extends Thread {
                 Logger.getLogger(TcpServer.class.getName()).log(Level.SEVERE, null, ex);
             }
             if (serverRunning == false) {
-                System.out.println("Server stopped...");
-
                 break;
             }
         }
     }
 
     public void stopServer() {
-        System.out.println("Attempting to stop server...");
         try {
             listener.close();
         } catch (IOException ex) {

@@ -56,7 +56,7 @@ public class AboutWindow extends javax.swing.JFrame {
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
-        jTextArea1.setText("Created by:\nNanoDano <nanodano@devdungeon.com>\nhttp://www.devdungeon.com\nhttps://www.github.com/DevDungeon");
+        jTextArea1.setText("Created by:\nNanoDano <nanodano@devdungeon.com>\nhttp://www.devdungeon.com\nhttps://www.github.com/DevDungeon/TcpNull");
         jScrollPane1.setViewportView(jTextArea1);
 
         closeButton.setText("Close Window");
@@ -99,7 +99,7 @@ public class AboutWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 130, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(closeButton)
                 .addContainerGap())

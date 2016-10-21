@@ -1,19 +1,24 @@
 TCP Null
 ==================
 
-TCP server that listens and discards or echos back the data to the client for
-testing and debugging purposes.
+TCP server for debugging and testing. Discard incoming data or 
+echo it back to client raw or as an HTTP response.
 
 ![Screenshot of main window](screenshots/mainWindow.png)
 
 Features
 -------
-1 checkboxes
-2 logs
+* Specify what interface and port to listen on
+* Choose one of three actions for an incoming request:
+  * Discard incoming data
+  * Echo data back to client exactly as it was received
+  * Echo data back to client in the form of an HTTP 200 OK response
+
 
 Download the JAR
 ----------------
 * [TCP Null from DevDungeon.com](http://www.devdungeon.com/content/tcp-null)
+
 
 Source Code
 -----------

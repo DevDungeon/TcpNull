@@ -57,7 +57,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="jScrollPane2" pref="130" max="32767" attributes="0"/>
+              <Component id="jScrollPane2" pref="147" max="32767" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
               <Component id="closeButton" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -85,7 +85,7 @@
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Created by:&#xa;NanoDano &lt;nanodano@devdungeon.com&gt;&#xa;http://www.devdungeon.com&#xa;https://www.github.com/DevDungeon"/>
+            <Property name="text" type="java.lang.String" value="Created by:&#xa;NanoDano &lt;nanodano@devdungeon.com&gt;&#xa;http://www.devdungeon.com&#xa;https://www.github.com/DevDungeon/TcpNull"/>
           </Properties>
         </Component>
       </SubComponents>
