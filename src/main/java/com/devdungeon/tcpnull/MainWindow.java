@@ -64,7 +64,7 @@ public class MainWindow extends javax.swing.JFrame {
         actionOnRequestRadio3 = new javax.swing.JRadioButton();
         mainMenuBar = new javax.swing.JMenuBar();
         fileMenu = new javax.swing.JMenu();
-        jMenuItem1 = new javax.swing.JMenuItem();
+        quitMenuItem = new javax.swing.JMenuItem();
         helpMenu = new javax.swing.JMenu();
         tipsMenuItem = new javax.swing.JMenuItem();
         aboutMenuItem = new javax.swing.JMenuItem();
@@ -144,9 +144,14 @@ public class MainWindow extends javax.swing.JFrame {
 
         fileMenu.setText("File");
 
-        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
-        jMenuItem1.setText("Quit");
-        fileMenu.add(jMenuItem1);
+        quitMenuItem.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Q, java.awt.event.InputEvent.CTRL_MASK));
+        quitMenuItem.setText("Quit");
+        quitMenuItem.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quitMenuItemActionPerformed(evt);
+            }
+        });
+        fileMenu.add(quitMenuItem);
 
         mainMenuBar.add(fileMenu);
 
@@ -247,7 +252,7 @@ public class MainWindow extends javax.swing.JFrame {
                     this
             );
             serverThread.start();
-            
+
             statusLabel.setText("Status: Running...");
         }
     }//GEN-LAST:event_startButtonActionPerformed
@@ -278,6 +283,18 @@ public class MainWindow extends javax.swing.JFrame {
         httpFormat = true;
     }//GEN-LAST:event_actionOnRequestRadio3ActionPerformed
 
+    private void quitMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quitMenuItemActionPerformed
+        if (serverThread.serverRunning) {
+            serverThread.stopServer();
+            try {
+                serverThread.join();
+            } catch (InterruptedException ex) {
+                // Ignore
+            }
+        }
+        System.exit(0);
+    }//GEN-LAST:event_quitMenuItemActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -304,11 +321,11 @@ public class MainWindow extends javax.swing.JFrame {
     javax.swing.JLabel hostLabel;
     javax.swing.JTextField hostText;
     javax.swing.JLabel jLabel1;
-    javax.swing.JMenuItem jMenuItem1;
     javax.swing.JPanel jPanel1;
     javax.swing.JMenuBar mainMenuBar;
     javax.swing.JLabel portLabel;
     javax.swing.JTextField portText;
+    javax.swing.JMenuItem quitMenuItem;
     javax.swing.JToggleButton startButton;
     javax.swing.JLabel statusLabel;
     javax.swing.JPanel statusPanel;
