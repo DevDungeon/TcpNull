@@ -17,11 +17,9 @@
  */
 package com.devdungeon.tcpnull;
 
-import com.devdungeon.tcpnull.WindowHelper;
-
 /**
  *
- * @author dtron
+ * @author NanoDano <nanodano@devdungeon.com>
  */
 public class TipsWindow extends javax.swing.JFrame {
 
@@ -54,7 +52,7 @@ public class TipsWindow extends javax.swing.JFrame {
         tipsTextArea.setEditable(false);
         tipsTextArea.setColumns(20);
         tipsTextArea.setRows(5);
-        tipsTextArea.setText("Tips:\n\n- Use hostname or IP address\n- Use host 0.0.0.0 to bind all interfaces\n- Use localhost or 127.0.0.1 for local only listening\n- Hostname and port must be changed while server off\n- Other options can be changed while running\n- If the server is stopped and started rapidly,\n  a socket may be busy, wait a little bit and try\n  again or change to a different port\n\n");
+        tipsTextArea.setText("Tips:\n\n- Use hostname or IP address\n- Use host 0.0.0.0 to bind all interfaces\n- Use localhost or 127.0.0.1 for local only listening\n- Server must be stopped to change options\n- If the server is stopped and started rapidly,\n  a socket may be busy, wait a little bit and try\n  again or change to a different port\n\n");
         tipsScrollPane.setViewportView(tipsTextArea);
 
         closeButton.setText("Close Window");
@@ -71,7 +69,7 @@ public class TipsWindow extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(tipsScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 511, Short.MAX_VALUE)
+                    .addComponent(tipsScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 504, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(closeButton)
                         .addGap(0, 0, Short.MAX_VALUE)))
@@ -81,7 +79,7 @@ public class TipsWindow extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(tipsScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .addComponent(tipsScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 214, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(closeButton)
                 .addContainerGap())

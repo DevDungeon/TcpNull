@@ -42,4 +42,6 @@
             </plugin>
         </plugins>
     </build>
+    <name>TcpNull</name>
+    <description>A TCP server that listens and discards or echos back data for testing and debugging.</description>
 </project>
