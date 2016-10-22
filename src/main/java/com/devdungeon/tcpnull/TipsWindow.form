@@ -65,7 +65,7 @@
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="Tips:&#xa;&#xa;- Use hostname or IP address&#xa;- Use host 0.0.0.0 to bind all interfaces&#xa;- Use localhost or 127.0.0.1 for local only listening&#xa;- Server must be stopped to change options&#xa;- If the server is stopped and started rapidly,&#xa;  a socket may be busy, wait a little bit and try&#xa;  again or change to a different port&#xa;&#xa;"/>
+            <Property name="text" type="java.lang.String" value="- Use hostname or IP address&#xa;- Use host 0.0.0.0 to bind all interfaces&#xa;- Use localhost or 127.0.0.1 for local only listening&#xa;- Server must be stopped to change options&#xa;- If the server is stopped and started rapidly,&#xa;  a socket may be busy, wait a little bit and try&#xa;  again or change to a different port&#xa;&#xa;"/>
           </Properties>
         </Component>
       </SubComponents>

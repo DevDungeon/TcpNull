@@ -52,7 +52,7 @@ public class TipsWindow extends javax.swing.JFrame {
         tipsTextArea.setEditable(false);
         tipsTextArea.setColumns(20);
         tipsTextArea.setRows(5);
-        tipsTextArea.setText("Tips:\n\n- Use hostname or IP address\n- Use host 0.0.0.0 to bind all interfaces\n- Use localhost or 127.0.0.1 for local only listening\n- Server must be stopped to change options\n- If the server is stopped and started rapidly,\n  a socket may be busy, wait a little bit and try\n  again or change to a different port\n\n");
+        tipsTextArea.setText("- Use hostname or IP address\n- Use host 0.0.0.0 to bind all interfaces\n- Use localhost or 127.0.0.1 for local only listening\n- Server must be stopped to change options\n- If the server is stopped and started rapidly,\n  a socket may be busy, wait a little bit and try\n  again or change to a different port\n\n");
         tipsScrollPane.setViewportView(tipsTextArea);
 
         closeButton.setText("Close Window");
